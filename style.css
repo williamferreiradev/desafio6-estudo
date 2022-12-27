@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body, html{
+    background-color: #d6d4e2;
+    width: 95%;
+}
+
+.container, .container-2, .container-3, .container-likes{
+    display: flex;
+    background-color: #fff;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 25px;
+}
+.content .cc h3{
+    margin-top: -0.2rem;
+    color: #18161f;
+    font-family: sans-serif;
+}
+.content .cc{
+    display: flex;
+}
+
+.cc li{
+    margin-left: 1.5rem;
+    list-style-type: disc;
+    color: #787490;
+    font-weight: 600;
+}
+
+.content{
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.content p{
+    margin-top: 0.5rem;
+}
+
+.container-likes{
+    display: flex;
+    width: 50%;
+    margin-top: -1rem;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 0;    
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 25px;
+}
+
+.container-likes .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.container-likes span{ font-weight: 600;}
+
+
+@media (min-width: 279px){
+    .container, .container-2, .container-3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .cc{
+        text-align: start;
+    }
+
+    .img{
+        margin-left: 1rem;
+    }
+
+    
+.container-likes{
+    display: flex;
+    width: 100%;
+    margin-top: -1rem;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 0;    
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 25px;
+}
+
+.container-likes .img{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+}
+
+
+
+@media (min-width: 768px){
+    .container, .container-2, .container-3{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .cc{
+        text-align: center;
+    }
+
+    .img{
+        margin-left: 1rem;
+    }
+
+    
+.container-likes{
+    display: flex;
+    width: 50%;
+    margin-top: -1rem;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 0;    
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 25px;
+}
+
+.container-likes .img{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+}
